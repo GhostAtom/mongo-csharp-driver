@@ -142,7 +142,7 @@ namespace MongoDB.Bson.Serialization.Options
             }
 
             var decimalValue = (decimal)value;
-            if (value < (double)decimal.MinValue || value > (double)decimal.MaxValue)
+            if (value < (double)double.MinValue || value > (double)decimal.MaxValue)
             {
                 if (!_allowOverflow) { throw new OverflowException(); }
             }

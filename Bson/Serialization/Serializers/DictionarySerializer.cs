@@ -247,10 +247,10 @@ namespace MongoDB.Bson.Serialization.Serializers
                 {
                     return new ListDictionary();
                 }
-                else if (type == typeof(OrderedDictionary))
-                {
-                    return new OrderedDictionary();
-                }
+                //else if (type == typeof(OrderedDictionary))
+                //{
+                //    return new OrderedDictionary();
+                //}
                 else if (type == typeof(SortedList))
                 {
                     return new SortedList();

@@ -243,7 +243,7 @@ namespace MongoDB.Driver
                             break;
                         default:
                             var message = string.Format("Element '{0}' is not valid for MongoDBRef.", name);
-                            throw new FileFormatException(message);
+                            throw new FormatException(message);
                     }
                 }
                 bsonReader.ReadEndDocument();
